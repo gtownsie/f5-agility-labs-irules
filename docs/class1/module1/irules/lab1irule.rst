@@ -9,15 +9,16 @@ Example Code to help you on your journey (Not fully functional):
 .. code::
 
   when HTTP_REQUEST {
-	  if {[HTTP::host] equals “dvwa.f5lab.com” }{
+	  if {[HTTP::host] equals "dvwa.f5lab.com" }{
 		  pool <pool_name>
-	  elseif ….
+	  elseif ...
   }
 
 .. code::
 
   when HTTP_REQUEST {
 	  switch [HTTP::host] {
-		  “dvwa.f5lab.com” { pool <pool_name>}
-  		  ….
+		  "dvwa.f5lab.com" { pool <pool_name>}
+		  ...
+  		}
   }
