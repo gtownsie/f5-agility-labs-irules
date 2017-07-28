@@ -9,10 +9,10 @@ Example Code to help you on your journey (Not fully functional):
 .. code::
 
   when HTTP_REQUEST {
-    log local0. “Request Headers: [HTTP::header names]”
+    log local0. "Request Headers: [HTTP::header names]"
   }
 
   when HTTP_RESPONSE {
-    log local0. “Response Headers: [HTTP::header names]”
+    log local0. "Response Headers: [HTTP::header names]"
     HTTP:: command to remove header
   }
